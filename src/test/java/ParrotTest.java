@@ -3,26 +3,33 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ParrotTest {
-    Lab p = new Lab();
+    Parrot parrot = new Parrot();
 
     /**
-     * If p.copy is passed "hello", it should return "hello".
+     * Tests the copy() method of the Parrot class.
+     * 
+     * This test verifies that, if copy() receives the text "hello" as input, it returns the expected string "hello".
+     * 
      */
     @Test
-    public void parrotTestHello(){
+    public void parrotTestHello() {
         String input = "hello";
         String expected = "hello";
-        String actual = p.copy(input);
+        String actual = parrot.copy(input);
         Assert.assertEquals(expected, actual);
     }
+
     /**
-     * If p.copy is passed "polly", it should return "polly".
+     * Tests the copy() method of the Parrot class.
+     * 
+     * This test verifies that, if copy() receives the text "polly" as input, it returns the expected string "polly".
+     * 
      */
     @Test
-    public void parrotTestPolly(){
+    public void parrotTestPolly() {
         String input = "polly";
         String expected = "polly";
-        String actual = p.copy(input);
+        String actual = parrot.copy(input);
         Assert.assertEquals(expected, actual);
     }
 }
